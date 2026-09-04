@@ -408,3 +408,22 @@ nav[data-astro-cid-wpvy4v7s] a[data-astro-cid-wpvy4v7s][aria-current="page"] {
 .brand-knight-mirror {
   transform: scaleX(-1);
 }
+.about-photo { margin-block: 1.5rem; }
+.about-photo-frame {
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.about-photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.about-photo figcaption {
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+  text-align: center;
+  margin-top: 0.5rem;
+}

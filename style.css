@@ -382,3 +382,29 @@ nav[data-astro-cid-wpvy4v7s] a[data-astro-cid-wpvy4v7s][aria-current="page"] {
 @media (width >= 46rem) {
   .grid-2 { grid-template-columns: 1fr; }
 }
+
+/* Header: knight, wordmark, mirrored knight */
+.brand-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+}
+.brand-head a {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+.brand-head img {
+  width: clamp(56px, 15vw, 180px);
+  height: auto;
+  flex: 0 0 auto;
+  mix-blend-mode: lighten;
+}
+.brand-head h1 {
+  margin: 0;
+  text-align: center;
+}
+.brand-knight-mirror {
+  transform: scaleX(-1);
+}
